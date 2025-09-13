@@ -1,0 +1,49 @@
+Lesson 1 (variables & operators):
+    - Variables initialized with let or const (dynamic type). Const can't be reassigned. (var also but is deprecated)
+    - No need to worry about decimals or integer division (yet), seems dynamic.
+
+Lesson 2 (data types & conditionals)
+    - STRINGS: can use either ' or ", style-wise just choose one. 
+    - Can also be made with `, these are called template literals - can embed JS inside ${} and can be declared over multilines
+        e.g. const name = "Len"
+             const greeting = `Hello ${name}`
+    - Normal strings can be concatenated with + operator. Likely template literals are preferred?
+    - Template literals respect line breaks, typical strings require \n
+    - Escape sequences as expected \"
+    - Types are relatively dynamic, but for sanity you can use Number() on a string or String() on a number
+    - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String <- string methods
+    - COMPARISONS: same as expected, like C
+    - ^ added, strict equality (===), (!==) does not perform type conversion (and will return false if non matching types)
+    - CONDITIONALS: look exactly like C
+Related files: repeatString.js
+
+Lesson 3 (devtools)
+    - The DOM (Document Object Model) shows programming languages how a webpage is organized. 
+    - In chrome devtools you can choose an element, add CSS classes, or simply add CSS statements to the element
+    - You can also just edit the DOM HTML as you please
+    - There's a button to switch to mobile view in the top left of the devtools window
+    - To debug JS on a website you can view the "sources" tab to see the files, and set breakpoints on the right
+
+Lesson 4 (functions)
+    - syntax:
+        function foo(param1, param2 = defaultVal) {
+            return 'bar' //optional
+        }
+        let fubar = function(a) {
+            return a*a
+        }
+        (param1, param2 = defaultVal) => {
+            return param1 * param2
+        }
+        param1 => param1 + 12 //single line functions can omit return
+    - Note: semicolons not really optional, but if you  don't put them in there JS will do it for you (not necessarily as intended)
+    - functions are data types, you can store them in variables and copy them and such
+    - Function declarations can be called before they are defined. Function expressions (function(params)) only after they are defined.
+    - Call stack is C-like, callbacks go into a different place and wait for the call stack to be emptied to run. Async stuff
+
+Lesson 5 (problem solving)
+Related files: fizzbuzz.html
+
+Lesson 6 (understanding errors)
+    - Fairly straightforward, can use console log, breakpoints, debugger
+
