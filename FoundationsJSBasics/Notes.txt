@@ -47,3 +47,26 @@ Related files: fizzbuzz.html
 Lesson 6 (understanding errors)
     - Fairly straightforward, can use console log, breakpoints, debugger
 
+Lesson 7 (clean code)
+    - Use meaningful variable names
+    - Be consistent with semicolons, camelCase, vocabulary (e.g. get or fetch not both)
+    - No magic numbers
+    - Limit line length (consistently)
+    - Comments should explain "why" not "how", even still code should be self-explanatory
+    - Same as was taught in CS136!
+
+Lesson 8 (loops & arrays)
+    - Syntax:
+        for (let i = 0; i < n; i++) {}
+        for (const item of list) {} // this is a for-each loop
+    - arr.map(fun) returns a new array with fun applied to each element
+    - arr.filter(fun) returns a new array containing only elements for which fun returns true
+    - arr.reduce(fun, initalValue) expects fun to take two params, fun(accumulator, current) and goes 
+        through the whole array applying fun to each (accumulator, arr[i]), returning the final result
+    - break and continue work as expected
+    - while and do-while work as expected
+    - arrays natively have pop and push, shift unshift (works on front of array, like pop from front, push to front)
+    - arrays behave as objects, where each parameter is associated with a numerical key from 0 to arr.length - 1
+    - ^ Don't really treat an array as an object (e.g. arr.pineapple = "ananas") because the compiler turns off array optimizations
+    - arr.toString returns a comma separated list of elements
+    - Never compare arrays with ==(=), as that just checks their references. Use a loop for item-by-item comparison. {No operator overloading in JS :( }
